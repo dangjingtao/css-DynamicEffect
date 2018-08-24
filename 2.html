@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2</title>
+
+    <style type="text/css">
+        .wrap{
+            width: 600px;
+            margin: 100px auto;
+            text-align: center;
+            font-size:18px;
+            line-height: 65px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .box{
+            width: 56px;
+            height: 65px;
+            border:2px solid #ebebeb;
+            background: #f7f6f6;
+            text-align: center;
+            vertical-align: center;
+        }
+
+        .box1{
+            transform: skew(30deg,0deg);
+            -ms-transform: skew(30deg,0deg);	/* IE 9 */
+            -webkit-transform: skew(30deg,0deg);	/* Safari and Chrome */
+            -o-transform: skew(30deg,0deg);	/* Opera */
+            -moz-transform: skew(30deg,0deg);	/* Firefox */
+        }
+
+
+
+        .box2{
+            transform: scale(0.5,1);
+            -ms-transform: scale(0.5,1);	/* IE 9 */
+            -webkit-transform: scale(0.5,1);	/* Safari 和 Chrome */
+            -o-transform: scale(0.5,1);	/* Opera */
+            -moz-transform: scale(0.5,1);	/* Firefox */
+        }
+
+        
+
+        .box3{
+            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);		/* IE 9 */
+            -webkit-transform: rotate(45deg);	/* Safari and Chrome */
+            -o-transform: rotate(45deg);		/* Opera */
+            -moz-transform: rotate(45deg);		/* Firefox */
+
+        }
+
+        .box4{
+            transform: translate(10px,20px);
+            -ms-transform: translate(10px,20px);		/* IE 9 */
+            -webkit-transform: translate(10px,20px);	/* Safari and Chrome */
+            -o-transform: translate(10px,20px);		/* Opera */
+            -moz-transform: translate(10px,20px);		/* Firefox */
+        }
+
+        .box5{
+            /* transform:matrix(0.5,0.5,-0.5,1,10,20); */
+
+
+            transform:matrix(0.707,0.707,-0.707,0.3535,10,20);
+ 
+        }
+
+        
+
+       
+    
+    </style> 
+</head>
+<body>
+    
+    <div class="wrap">
+
+        <!-- x轴位移10px,Y位移20px -->
+        <div class="box box1">box1</div>
+
+        <div class="box box2">box2</div>
+
+        <!-- 旋转45° -->
+        <div class="box box3">box3</div>
+
+        <div class="box box4">box4</div>
+
+        <div class="box box5">box5</div>
+        
+    </div>
+
+
+    <script>
+    
+
+    
+    </script>
+</body>
+</html>
