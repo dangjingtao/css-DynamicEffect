@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <title>CSS-3D-TRANSFORM</title>
+        <style type="text/css">
+
+            .wrap{
+                width:250px;
+                height: 350px;
+                margin:100px auto;
+                position: relative;
+                box-sizing: border-box;
+                transform-style: preserve-3d; /*开启3D空间*/
+                perspective: 1800px;
+
+            }
+            .page{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top:0;
+                left: 0;
+                background-repeat: no-repeat;
+                background-position: center center;
+                backface-visibility: hidden;/*如果不隐藏，背面是可见的*/
+                transition: 1s;
+            }
+
+            .front{ 
+                background: url('img/front.jpg');
+            }
+            .behind{
+                background: url('img/behind.jpg');
+                transform: rotateY(-180deg); /*背面的初始状态是反转的*/    
+            }
+
+            .wrap:hover .front{
+                transform: rotateY(180deg);
+            }
+            .wrap:hover .behind{
+                transform: rotateY(0deg);
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <div class="wrap">
+                <div class="front page"></div>
+                <div class="behind page"></div>
+            </div>  
+
+    </body>
+</html>
